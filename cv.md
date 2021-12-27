@@ -15,3 +15,17 @@ I'm a hardworking person who like to teach and help other people. I belive that 
 - Java Script Basics
 - Git
 ***
+### Code example:
+**Regex validate PIN code (from Codewars):** *ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the function is passed a valid PIN string, return true, else return false.*
+```
+function validatePIN (pin) {
+  if (pin.length == 4 || pin.length == 6) {
+    for (let num of pin) {
+      if (num != '0' && !parseInt(num)) return false;
+    }
+    return true;
+  }
+  return false;
+}
+```
+***
