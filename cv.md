@@ -31,7 +31,9 @@ function validatePIN (pin) {
 ```
 ***
 ### Work experience:
-I'm a beginner. I have no work experience yet.
+I worked 4 years in RUE Belpharmacia as a pharmacist. 
+
+In development I'm a beginner. I have no work experience in this field yet.
 ***
 ### Education and courses:
 - Belarusian State Medical University (2017), qualification: pharmacist.
