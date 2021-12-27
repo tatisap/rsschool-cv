@@ -29,3 +29,14 @@ function validatePIN (pin) {
 }
 ```
 ***
+### Work experience:
+I'm a beginner. I have no work experience yet.
+***
+### Education and courses:
+- Belarusian State Medical University (2017), qualification: pharmacist.
+- [The Modern JavaScript Tutorial](https://learn.javascript.ru) (in progress)
+***
+### Languages:
+- English (A2)
+- Russian (native speaker)
+- Belarusian (native speaker)
