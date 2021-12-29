@@ -8,97 +8,99 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <nav>
-                <ul>
-                    <li><a href="#summary">About myself</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#code">Code</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#work">Work experience</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main-container">
-            <section class="section" id="profile">
-                <h1>Tatsiana Sapun</h1>
-                <img src="./pictures/avatar.png" alt="Аватар" width="200" height="200">
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <nav>
+                    <ul>
+                        <li><a href="#summary">About myself</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#code">Code</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#work">Work experience</a></li>
+                        <li><a href="#languages">Languages</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <section class="section" id="profile">
+                    <h1>Tatsiana Sapun</h1>
+                    <img src="./pictures/avatar.png" alt="Аватар" width="200" height="200">
 
-            </section>
-            <section class="section" id="contacts">
-                <h3>Contacts</h3>
-                <ul>
-                    <li>Location: Minsk, Belarus</li>
-                    <li>Phone: +375 (29) 797 31 85</li>
-                    <li>Email: tatiana.sapun@gmail.com</li>
-                    <li>GitHub: tatisap</li>
-                </ul>
-            </section>
-            <section class="section" id="summary">
-                <h3>About myself</h3>
-                <p>I'm a pharmacist who want to become a frontend-developer. Since I left my job as a
-                specialist of pharmaceutical procurement procedures I have studied JS. So when I found 
-                RSS JS-course I thought it's a good opportunity to improve skills.</p>
-                <p>I'm a hardworking person who like to teach and help other people. I believe that my 
-                love to learn new things and perseverance will lead me to my goal.</p>
-            </section>
-            <section class="section" id="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Java Script Basics</li>
-                    <li>Git</li>
-                </ul> 
-            </section>
-            <section class="section" id="code">
-                <h3>Code example</h3>
-                <p>Regex validate PIN code (from Codewars): ATM machines allow 4 or 6 digit PIN codes
-                and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the
-                function is passed a valid PIN string, return true, else return false.</p>
-                <code>
-                    function validatePIN (pin) {
-                        if (pin.length == 4 || pin.length == 6) {
-                            for (let num of pin) {
-                                if (num != '0' && !parseInt(num)) return false;
+                </section>
+                <section class="section" id="contacts">
+                    <h3>Contacts</h3>
+                    <ul>
+                        <li>Location: Minsk, Belarus</li>
+                        <li>Phone: +375 (29) 797 31 85</li>
+                        <li>Email: tatiana.sapun@gmail.com</li>
+                        <li>GitHub: tatisap</li>
+                    </ul>
+                </section>
+                <section class="section" id="summary">
+                    <h3>About myself</h3>
+                    <p>I'm a pharmacist who want to become a frontend-developer. Since I left my job as a
+                    specialist of pharmaceutical procurement procedures I have studied JS. So when I found 
+                    RSS JS-course I thought it's a good opportunity to improve skills.</p>
+                    <p>I'm a hardworking person who like to teach and help other people. I believe that my 
+                    love to learn new things and perseverance will lead me to my goal.</p>
+                </section>
+                <section class="section" id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java Script Basics</li>
+                        <li>Git</li>
+                    </ul> 
+                </section>
+                <section class="section" id="code">
+                    <h3>Code example</h3>
+                    <p>Regex validate PIN code (from Codewars): ATM machines allow 4 or 6 digit PIN codes
+                    and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the
+                    function is passed a valid PIN string, return true, else return false.</p>
+                    <code>
+                        function validatePIN (pin) {
+                            if (pin.length == 4 || pin.length == 6) {
+                                for (let num of pin) {
+                                    if (num != '0' && !parseInt(num)) return false;
+                                }
+                                return true;
                             }
-                            return true;
+                            return false;
                         }
-                        return false;
-                    }
-                </code>
-            </section>
-            <section class="section" id="work">
-                <h3>Work experience</h3>
-                <p>I worked 4 years in RUE Belpharmacia as a pharmacist.</p>
-                <p>In development I'm a beginner. I have no work experience in this field yet.</p>
-            </section>
-            <section class="section" id="education">
-                <h3>Education and courses</h3>
-                <ul>
-                    <li>Belarusian State Medical University (2017), qualification: pharmacist</li>
-                    <li>[The Modern JavaScript Tutorial](https://learn.javascript.ru) (in progress)</li>
-                </ul>
-            </section>
-            <section class="section" id="languages">
-                <h3>Languages</h3>
-                <ul>
-                    <li>English (A2)</li>
-                    <li>Russian (native speaker)</li>
-                    <li>Belarusian (native speaker)</li>
-                </ul>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-container">
+                    </code>
+                </section>
+                <section class="section" id="work">
+                    <h3>Work experience</h3>
+                    <p>I worked 4 years in RUE Belpharmacia as a pharmacist.</p>
+                    <p>In development I'm a beginner. I have no work experience in this field yet.</p>
+                </section>
+                <section class="section" id="education">
+                    <h3>Education and courses</h3>
+                    <ul>
+                        <li>Belarusian State Medical University (2017), qualification: pharmacist</li>
+                        <li>[The Modern JavaScript Tutorial](https://learn.javascript.ru) (in progress)</li>
+                    </ul>
+                </section>
+                <section class="section" id="languages">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>English (A2)</li>
+                        <li>Russian (native speaker)</li>
+                        <li>Belarusian (native speaker)</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
 
-        </div>
-    </footer>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
