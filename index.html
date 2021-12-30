@@ -116,28 +116,34 @@
                         <p>Regex validate PIN code (from Codewars): ATM machines allow 4 or 6 digit PIN codes
                         and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the
                         function is passed a valid PIN string, return true, else return false.</p>
-                        <code>
-                            function validatePIN (pin) {
-                                if (pin.length == 4 || pin.length == 6) {
-                                    for (let num of pin) {
-                                        if (num != '0' && !parseInt(num)) return false;
-                                    }
-                                    return true;
-                                }
-                                return false;
-                            }
-                        </code>
+                        <pre>
+<code>function validatePIN (pin) {
+  if (pin.length == 4 || pin.length == 6) {
+    for (let num of pin) {
+      if (num != '0' && !parseInt(num)) {
+        return false;
+        }
+      }
+    return true;
+  }
+  return false;
+}</code>
+                        </pre>
                     </section>
                     <section class="section" id="work">
                         <h2>Work experience</h2>
-                        <p>I worked 4 years in RUE Belpharmacia as a pharmacist.</p>
-                        <p>In development I'm a beginner. I have no work experience in this field yet.</p>
+                        <p>I worked 4 years in RUE Belpharmacia as a pharmacist.<br>
+                           In development I'm a beginner. I have no work experience in this field yet.
+                        </p>
                     </section>
                     <section class="section" id="education">
                         <h2>Education and courses</h2>
                         <ul>
                             <li>Belarusian State Medical University (2017), qualification: pharmacist</li>
-                            <li>[The Modern JavaScript Tutorial](https://learn.javascript.ru) (in progress)</li>
+                            <li>
+                                <a href="https://learn.javascript.ru">The Modern JavaScript Tutorial</a>
+                                <span>(in progress)</span>
+                            </li>
                         </ul>
                     </section>
                     <section class="section" id="languages">
