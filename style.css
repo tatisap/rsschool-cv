@@ -11,6 +11,9 @@ body {
   min-width: 700px; 
   font-family: 'Open', sans-serif;
 }
+ul {
+  padding-inline-start: 0px;
+}
 .container {
   margin: 0px auto ;
   border-radius: 20px;
@@ -33,7 +36,6 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   list-style-type: none;
-  padding-inline-start: 0px;
 }
 .nav-item {
   flex-grow: 1;
@@ -84,7 +86,7 @@ h1 {
   font-size: 36px;
 }
 h2 {
-  margin-top: 0px;
+  margin: 0px 0px 10px;
 }
 #profile {
   text-align: center;
@@ -93,4 +95,20 @@ h2 {
   border: 10px solid #cedddf;
   border-radius: 125px;
   padding: 10px;
+}
+#contacts {
+  margin: 0px 15px;
+  border: 2px solid #00333b;
+  border-radius: 5px;
+}
+#contacts > ul {
+  list-style-type: none;
+  margin: 0px;
+}
+.contact-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.contact-item > span {
+  margin-left: 10px;
 }
