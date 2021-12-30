@@ -17,10 +17,10 @@ body {
   min-width: 750px;
   width: 70%;
   max-width: 1024px;
-  padding-bottom: 20px;
 }
 ul {
   list-style-type: square;
+  padding-inline-start: 20px;
 }
 a {
   color: black;
@@ -89,6 +89,9 @@ header {
   padding: 10px 20px;
   text-align: justify;
 }
+.left-column .section {
+  margin: 0px 15px;
+}
 h1 {
   margin: 0px;
   font-size: 36px;
@@ -97,6 +100,7 @@ h2 {
   margin: 0px 0px 10px;
 }
 #profile {
+  margin: 0px;
   text-align: center;
 }
 #profile img {
@@ -105,7 +109,6 @@ h2 {
   padding: 10px;
 }
 #contacts {
-  margin: 0px 15px;
   border: 2px solid #00333b;
   border-radius: 5px;
 }
@@ -123,4 +126,32 @@ h2 {
 }
 pre {
   margin: 0px;
+}
+
+/*footer*/
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00333b;
+  padding: 20px;
+  color: #fff;
+}
+.footer-container a {
+  color: #fff;
+}
+.github-link {
+  font-size: 20px;
+}
+.rss-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.icon-attribute {
+  font-size: 12px ! important;
 }
