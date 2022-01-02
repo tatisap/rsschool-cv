@@ -1,3 +1,172 @@
-html {
-  margin: 0;  
+@font-face {
+  font-family: Open;
+   src: url("./fonts/OpenSans-Regular.ttf");
+ }
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: #00333b;
+  font-family: 'Open', sans-serif;
+}
+.container {
+  margin: 0px auto ;
+  border-radius: 20px;
+  background-color: #cedddf;
+  min-width: 750px;
+  width: 70%;
+  max-width: 1024px;
+}
+ul {
+  list-style-type: square;
+  padding-inline-start: 20px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*header*/
+header {
+  position: sticky;
+  top: 0px;
+}
+.header-container {
+  padding: 10px;
+  background-color: #00333b;
+}
+.nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+.nav-item {
+  flex-grow: 1;
+  text-align: center;
+}
+.nav-link {
+  color: #fff;
+}
+.nav-link:visited {
+  color: #fff;
+}
+.link-text-content {
+  margin: 0px;
+}
+
+/*main*/
+.main-container {
+  display: flex;
+  padding: 20px;
+}
+.left-column {
+  background-color: #fff;
+  
+  border-radius: 10px;
+  flex: none;
+  width: 300px;
+}
+.right-column {
+  margin-left: 10px;
+  padding: 10px;
+  border: 5px solid #fff;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+.section {
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: justify;
+}
+.left-column .section {
+  margin: 0px 15px;
+}
+.anchor {
+  display: block;
+  height: 125px; 
+  margin-top: -125px; 
+  visibility: hidden;
+}
+h1 {
+  margin: 0px;
+  font-size: 36px;
+}
+h2 {
+  margin: 0px 0px 10px;
+}
+#profile {
+  margin: 0px;
+  text-align: center;
+}
+#profile img {
+  border: 10px solid #cedddf;
+  border-radius: 125px;
+  padding: 10px;
+}
+.contacts {
+  border: 2px solid #00333b;
+  border-radius: 5px;
+}
+.contacts > ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-inline-start: 0px;
+}
+.contact-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.contact-item > span {
+  margin-left: 10px;
+}
+.code-example {
+  margin: 0px;
+  background-color: lightgrey;
+  padding: 5px;
+}
+.projects {
+  display: inline-block;
+  margin: 0px;
+  padding: 5px;
+  border: 5px solid #cedddf;
+  border-radius: 5px;
+}
+
+/*footer*/
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00333b;
+  padding: 20px;
+  color: #fff;
+}
+.footer-container a {
+  color: #fff;
+}
+.github-link {
+  font-size: 20px;
+}
+.rss-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 104px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.icon-attribute {
+  font-size: 12px ! important;
 }
