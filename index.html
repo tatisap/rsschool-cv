@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <nav>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#summary">
+                                <img src="./icons/about.png" alt="Icon-about" width="30" height="30">
+                                <p class="link-text-content">About myself</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">
+                                <img src="./icons/skills.png" alt="Icon-skills" width="30" height="30">
+                                <p class="link-text-content">Skills</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#code">
+                                <img src="./icons/code.png" alt="Icon-code" width="30" height="30">
+                                <p class="link-text-content">Code</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">
+                                <img src="./icons/education.png" alt="Icon-code" width="30" height="30">
+                                <p class="link-text-content">Education</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">
+                                <img src="./icons/work.png" alt="Icon-work" width="30" height="30">
+                                <p class="link-text-content">Work experience</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#languages">
+                                <img src="./icons/languages.png" alt="Icon-languages" width="30" height="30">
+                                <p class="link-text-content">Languages</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">
+                                <img src="./icons/contacts.png" alt="Icon-contacts" width="30" height="30">
+                                <p class="link-text-content">Contacts</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="left-column">
+                    <section class="section" id="profile">
+                        <img src="./pictures/avatar.png" alt="Аватар" width="250" height="250">
+                        <h1>Tatsiana Sapun</h1>
+                        
+                    </section>
+                    <section class="section contacts">
+                        <a class="anchor" id="contacts"></a>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li class="contact-item">
+                                <img src="./icons/location.png" alt="Icon-location" width="25" height="25">
+                                <span>Minsk, Belarus</span>
+                            </li>
+                            <li class="contact-item">
+                                <img src="./icons/phone.png" alt="Icon-phone" width="25" height="25">
+                                <span><a href="tel:+375(29)7973185">+375 (29) 797 31 85</a></span>
+                            </li>
+                            <li class="contact-item">
+                                <img src="./icons/email.png" alt="Icon-email" width="25" height="25">
+                                <span><a href="mailto:tatiana.sapun@gmail.com">tatiana.sapun@gmail.com</a></span>
+                            </li>
+                            <li class="contact-item">
+                                <img src="./icons/github.png" alt="Icon-github" width="25" height="25">
+                                <span><a href="https://github.com/tatisap/">tatisap</a></span>
+                            </li>
+                            <li class="contact-item">
+                                <img src="./icons/discord.png" alt="Icon-discord" width="25" height="25">
+                                <span>tatisap#0864</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section">
+                        <a class="anchor" id="skills"></a>
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script Basics</li>
+                            <li>Git</li>
+                        </ul> 
+                    </section>
+                </div>
+                <div class="right-column">
+                    <section class="section">
+                        <a class="anchor" id="summary"></a>
+                        <h2>About myself</h2>
+                        <p>I'm a pharmacist who want to become a frontend-developer. Since I left my job as a
+                        specialist of pharmaceutical procurement procedures I have studied JS. So when I found 
+                        RSS JS-course I thought it's a good opportunity to improve skills.</p>
+                        <p>I'm a hardworking person who like to teach and help other people. I believe that my 
+                        love to learn new things and perseverance will lead me to my goal.</p>
+                    </section>
+                    <section class="section">
+                        <a class="anchor" id="code"></a>
+                        <h2>Code example</h2>
+                        <p>Regex validate PIN code (from Codewars): <em>ATM machines allow 4 or 6 digit PIN codes
+                        and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the
+                        function is passed a valid PIN string, return true, else return false.</em></p>
+                        <pre class="code-example">
+<code>function validatePIN (pin) {
+  if (pin.length == 4 || pin.length == 6) {
+    for (let num of pin) {
+      if (num != '0' && !parseInt(num)) {
+        return false;
+        }
+      }
+    return true;
+  }
+  return false;
+}</code>
+                        </pre>
+                    </section>
+                    <section class="section">
+                        <a class="anchor" id="work"></a>
+                        <h2>Work experience</h2>
+                        <p>I worked 4 years in RUE Belpharmacia as a pharmacist.<br>
+                           In development I'm a beginner. I have no work experience in this field yet.
+                        </p>
+                        <p class="projects">I have only one study project in RSSchool: 
+                           <a href="https://tatisap.github.io/rsschool-cv/">it's this CV project</a>.
+                        </p>
+                    </section>
+                    <section class="section">
+                        <a class="anchor" id="education"></a>
+                        <h2>Education and courses</h2>
+                        <ul>
+                            <li>Belarusian State Medical University (2017), qualification: pharmacist</li>
+                            <li>
+                                <a href="https://learn.javascript.ru">The Modern JavaScript Tutorial</a>
+                                <span>(in progress)</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section">
+                        <a class="anchor" id="languages"></a>
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>English (A2)</li>
+                            <li>Russian (native speaker)</li>
+                            <li>Belarusian (native speaker)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div>
+                    ©2022
+                    <a class="github-link" href="https://github.com/tatisap/">tatisap</a>
+                </div>
+                <div class="icon-attribute">
+                    Icons made by 
+                    <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+                    from 
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                </div>
+                <a class="rss-icon" href="https://rs.school/js/">
+                    <img src="./icons/rs_school_js.svg" alt="Icon-rsschool" width="94" height="38">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
