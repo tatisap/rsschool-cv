@@ -124,8 +124,10 @@ h2 {
 .contact-item > span {
   margin-left: 10px;
 }
-pre {
+.code-example {
   margin: 0px;
+  background-color: lightgrey;
+  padding: 5px;
 }
 
 /*footer*/
