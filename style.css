@@ -92,6 +92,12 @@ header {
 .left-column .section {
   margin: 0px 15px;
 }
+.anchor {
+  display: block;
+  height: 125px; 
+  margin-top: -125px; 
+  visibility: hidden;
+}
 h1 {
   margin: 0px;
   font-size: 36px;
@@ -108,11 +114,11 @@ h2 {
   border-radius: 125px;
   padding: 10px;
 }
-#contacts {
+.contacts {
   border: 2px solid #00333b;
   border-radius: 5px;
 }
-#contacts > ul {
+.contacts > ul {
   list-style-type: none;
   margin: 0px;
   padding-inline-start: 0px;
