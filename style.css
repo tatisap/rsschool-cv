@@ -14,7 +14,7 @@ body {
   margin: 0px auto ;
   border-radius: 20px;
   background-color: #cedddf;
-  min-width: 750px;
+  min-width: 780px;
   width: 70%;
   max-width: 1024px;
 }
@@ -73,7 +73,7 @@ header {
   
   border-radius: 10px;
   flex: none;
-  width: 300px;
+  width: 310px;
 }
 .right-column {
   margin-left: 10px;
