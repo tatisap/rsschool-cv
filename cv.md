@@ -23,17 +23,16 @@ I'm a hardworking person who like to teach and help other people. I believe that
 ***
 
 ### Code example:
-**Regex validate PIN code (from Codewars):** *ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the function is passed a valid PIN string, return true, else return false.*
+**RGB To Hex Conversion (from Codewars):** *The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.*
 ```
-function validatePIN (pin) {
-  if (pin.length == 4 || pin.length == 6) {
-    for (let num of pin) {
-      if (num != '0' && !parseInt(num)) return false;
-    }
-    return true;
-  }
-  return false;
+function rgb(r, g, b){
+  return `${numberToHex(r)}${numberToHex(g)}${numberToHex(b)}`.toUpperCase() ;
 }
+
+function numberToHex (num) {
+  let hexNum = (num < 0) ? '00' : (num > 255) ? 'FF' : num.toString(16);
+  return (hexNum.length === 1) ? '0' + hexNum : hexNum;
+ }
 ```
 
 ***
@@ -41,13 +40,19 @@ function validatePIN (pin) {
 ### Work experience:
 I worked 4 years in RUE Belpharmacia as a pharmacist. 
 
-In development I'm a beginner. I have no work experience in this field yet.
+***
+
+### Projects:
+- [Portfolio](https://rolling-scopes-school.github.io/tatisap-JSFEPRESCHOOL/portfolio/);
+- [Movie App](https://rolling-scopes-school.github.io/tatisap-JSFEPRESCHOOL/movie-app/);
+- [Tetris](https://rolling-scopes-school.github.io/tatisap-JSFEPRESCHOOL/tetris/).
 
 ***
 
 ### Education and courses:
 - Belarusian State Medical University (2017), qualification: pharmacist.
-- [The Modern JavaScript Tutorial](https://learn.javascript.ru) (in progress)
+- [The Modern JavaScript Tutorial](https://learn.javascript.ru).
+- RSSchool JS / FRONT-END Stage#0.
 
 ***
 
