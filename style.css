@@ -14,8 +14,6 @@ body {
   margin: 0px auto ;
   border-radius: 20px;
   background-color: #cedddf;
-  min-width: 780px;
-  width: 70%;
   max-width: 1024px;
 }
 ul {
@@ -70,7 +68,6 @@ header {
 }
 .left-column {
   background-color: #fff;
-  
   border-radius: 10px;
   flex: none;
   width: 310px;
@@ -98,11 +95,11 @@ header {
   margin-top: -125px; 
   visibility: hidden;
 }
-h1 {
+.page-title {
   margin: 0px;
   font-size: 36px;
 }
-h2 {
+.section-title {
   margin: 0px 0px 10px;
 }
 #profile {
@@ -118,7 +115,7 @@ h2 {
   border: 2px solid #00333b;
   border-radius: 5px;
 }
-.contacts > ul {
+.contacts-list {
   list-style-type: none;
   margin: 0px;
   padding-inline-start: 0px;
@@ -131,14 +128,17 @@ h2 {
   margin-left: 10px;
 }
 .code-example {
+  display: none;
   margin: 0px;
   background-color: lightgrey;
   padding: 5px;
+  overflow: auto;
 }
 .projects {
-  display: inline-block;
+  display: block;
   margin: 0px;
-  padding: 5px;
+  padding: 10px;
+  padding-left: 40px;
   border: 5px solid #cedddf;
   border-radius: 5px;
 }
@@ -169,4 +169,85 @@ h2 {
 }
 .icon-attribute {
   font-size: 12px ! important;
+}
+
+@media (max-width: 860px){
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    .left-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 100%;
+    }
+    .right-column {
+        margin: 0;
+    }
+    #profile {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .contacts {
+        border: 0;
+        width: 300px;
+    }
+}  
+
+@media (max-width: 740px) {
+    .container {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: 1fr min-content;
+        border-radius: 0;
+    }
+    header {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .header-container {
+        height: 100%;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills {
+        width: 300px;
+    }
+    .left-column .section {
+        margin: 0;
+    }
+} 
+@media (max-width: 500px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .left-column .section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contacts,
+    .skills {
+        width: 250px;
+    } 
+}
+@media (max-width: 450px) {
+    .container {
+        display: block;
+    }
+    header {
+        display: none;
+    }
 }

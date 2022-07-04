@@ -11,7 +11,7 @@
     <div class="container">
         <header>
             <div class="header-container">
-                <nav>
+                <nav class="nav">
                     <ul class="nav-list">
                         <li class="nav-item">
                             <a class="nav-link" href="#summary">
@@ -23,12 +23,6 @@
                             <a class="nav-link" href="#skills">
                                 <img src="./icons/skills.png" alt="Icon-skills" width="30" height="30">
                                 <p class="link-text-content">Skills</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#code">
-                                <img src="./icons/code.png" alt="Icon-code" width="30" height="30">
-                                <p class="link-text-content">Code</p>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -62,15 +56,14 @@
         <main>
             <div class="main-container">
                 <div class="left-column">
-                    <section class="section" id="profile">
+                    <section id="profile" class="section">
                         <img src="./pictures/avatar.png" alt="Аватар" width="250" height="250">
-                        <h1>Tatsiana Sapun</h1>
-                        
+                        <h1 class="page-title">Tatsiana Sapun</h1>
                     </section>
                     <section class="section contacts">
                         <a class="anchor" id="contacts"></a>
-                        <h2>Contacts</h2>
-                        <ul>
+                        <h2 class="section-title">Contacts</h2>
+                        <ul class="contact-list">
                             <li class="contact-item">
                                 <img src="./icons/location.png" alt="Icon-location" width="25" height="25">
                                 <span>Minsk, Belarus</span>
@@ -93,21 +86,25 @@
                             </li>
                         </ul>
                     </section>
-                    <section class="section">
+                    <section class="section skills">
                         <a class="anchor" id="skills"></a>
-                        <h2>Skills</h2>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Java Script Basics</li>
-                            <li>Git</li>
+                        <h2 class="section-title">Skills</h2>
+                        <ul class="skills-list">
+                            <li class="skill-item">HTML</li>
+                            <li class="skill-item">CSS</li>
+                            <li class="skill-item">JavaScript</li>
+                            <li class="skill-item">Typescript Basics</li>
+                            <li class="skill-item">Git</li>
+                            <li class="skill-item">Webpack</li>
+                            <li class="skill-item">Sass</li>
+                            <li class="skill-item">NodeJS Basics</li>
                         </ul> 
                     </section>
                 </div>
                 <div class="right-column">
                     <section class="section">
                         <a class="anchor" id="summary"></a>
-                        <h2>About myself</h2>
+                        <h2 class="section-title">About myself</h2>
                         <p>I'm a pharmacist who want to become a frontend-developer. Since I left my job as a
                         specialist of pharmaceutical procurement procedures I have studied JS. So when I found 
                         RSS JS-course I thought it's a good opportunity to improve skills.</p>
@@ -115,53 +112,44 @@
                         love to learn new things and perseverance will lead me to my goal.</p>
                     </section>
                     <section class="section">
-                        <a class="anchor" id="code"></a>
-                        <h2>Code example</h2>
-                        <p>Regex validate PIN code (from Codewars): <em>ATM machines allow 4 or 6 digit PIN codes
-                        and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits. If the
-                        function is passed a valid PIN string, return true, else return false.</em></p>
-                        <pre class="code-example">
-<code>function validatePIN (pin) {
-  if (pin.length == 4 || pin.length == 6) {
-    for (let num of pin) {
-      if (num != '0' && !parseInt(num)) {
-        return false;
-        }
-      }
-    return true;
-  }
-  return false;
-}</code>
-                        </pre>
-                    </section>
-                    <section class="section">
                         <a class="anchor" id="work"></a>
-                        <h2>Work experience</h2>
+                        <h2 class="section-title">Experience</h2>
                         <p>I worked 4 years in RUE Belpharmacia as a pharmacist.<br>
-                           In development I'm a beginner. I have no work experience in this field yet.
+                            I have no work experience as a developer yet.
                         </p>
-                        <p class="projects">I have only one study project in RSSchool: 
-                           <a href="https://tatisap.github.io/rsschool-cv/">it's this CV project</a>.
-                        </p>
+                        <p>
+                            <a href="https://www.codewars.com/users/tatisap/">Codewars link here</a>
+                      </p>
+                        <h2 class="section-title">Study projects:</h2>
+                        <ul class="projects-list"> 
+                            <li class="project-item"><a href="https://tatisap.github.io/RSSstage-0/portfolio/">Photographer's portfolio</a></li>
+                            <li class="project-item"><a href="https://tatisap.github.io/RSSstage-1/shelter/pages/main/">Shelter</a></li>
+                            <li class="project-item"><a href="https://tatisap.github.io/RSSstage-0/tetris/">Tetris game</a></li>
+                            <li class="project-item"><a href="https://tatisap.github.io/rss-virtual-keyboard">Virtual keyboard</a></li>
+                            <li class="project-item"><a href="https://tatisap.github.io/RSSstage-0/movie-app/">Movie app</a></li>
+                            <li class="project-item"><a href="https://tatisap.github.io/currency-api-app/">Currency app</a></li>
+                            <li class="project-item"><a href="https://tatisap.github.io/cssMemSlider/cssMemSlider/index.html">Css Mem Slider</a></li>
+                            <li class="project-item"><a href="https://github.com/tatisap/file-manager">Simple console file manager</a></li>
+                            <li class="project-item"><a href="https://github.com/tatisap/CRUD-API">CRUD-api</a></li>
+                        </ul>
                     </section>
                     <section class="section">
                         <a class="anchor" id="education"></a>
-                        <h2>Education and courses</h2>
-                        <ul>
-                            <li>Belarusian State Medical University (2017), qualification: pharmacist</li>
-                            <li>
-                                <a href="https://learn.javascript.ru">The Modern JavaScript Tutorial</a>
-                                <span>(in progress)</span>
-                            </li>
+                        <h2 class="section-title">Education and courses</h2>
+                        <ul class="education-list">
+                            <li class="education-item">Belarusian State Medical University (2017), qualification: pharmacist</li>
+                            <li class="education-item">Stage#0 JavaScript RSSchool</li>
+                            <li class="education-item">Stage#1 JavaScript RSSchool</li>
+                            <li class="education-item">Stage#2 JavaScript RSSchool (in progress)</li>
                         </ul>
                     </section>
                     <section class="section">
                         <a class="anchor" id="languages"></a>
-                        <h2>Languages</h2>
-                        <ul>
-                            <li>English (A2)</li>
-                            <li>Russian (native speaker)</li>
-                            <li>Belarusian (native speaker)</li>
+                        <h2 class="section-title">Languages</h2>
+                        <ul class="languages-list">
+                            <li class="language-item">English (A2, B1(Examinator Epam Platform Test))</li>
+                            <li class="language-item">Russian (native speaker)</li>
+                            <li class="language-item">Belarusian (native speaker)</li>
                         </ul>
                     </section>
                 </div>
